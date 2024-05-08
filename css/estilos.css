@@ -1,0 +1,23 @@
+.imagen-logo {
+    width: 200px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+.texto{
+    text-align: center;
+}
+.tabla{
+    width: 600px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    border: 4px solid #3498db;
+}
+.encabezado{
+    width: 200px;
+    height: auto;
+}
+.datos{
+    text-align: center;
+}
