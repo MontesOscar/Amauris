@@ -1,0 +1,54 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(217, 173, 230, 0.4);
+  color: #000000;
+  text-align: center;
+}
+
+.contenedor {
+  background-color: rgba(173, 196, 230, 0.6); 
+  padding: 20px;
+  border-radius: 15px; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); 
+  width: 80%;
+  max-width: 800px;
+}
+
+.img-logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  align-content: center;
+}
+
+.texto {
+  color: #000000; 
+}
+
+.tabla {
+  margin: 0 auto; 
+  width: 80%; 
+  border-collapse: collapse; 
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.encabezado, .datos {
+  border: 1px solid #000000; 
+  padding: 8px; 
+}
+
+.encabezado {
+  background-color: rgba(48, 76, 236, 0.5); 
+  color: #000000; 
+  font-size: 20px;
+}
+
+.datos a {
+  color: #b4468a; 
+  text-decoration: none; 
+}
+
+.datos a:hover {
+  text-decoration: underline; 
+}

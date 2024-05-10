@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(185, 224, 238);
+}
+
+.estilo {
+  border: 1px solid black;
+  width: 700px;
+  height: auto;
+  background-color: rgb(168, 255, 226);
+  border-radius: 15px;
+}
+
+.estilo2 {
+  width: 260px;
+  height: 260px;
+  border-color: transparent;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+}
+
+.contenedor p {
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.texto {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #121483;
+}
+
+h3 {
+  font-size: 25px;
+  color: #121483;
+}
