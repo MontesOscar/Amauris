@@ -52,3 +52,6 @@ body {
 .datos a:hover {
   text-decoration: underline; 
 }
+.sin_marca {
+  list-style-type: none;
+}
