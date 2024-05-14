@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e6e6ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #663399;
+}
+
+p {
+  color: #000000;
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+}
