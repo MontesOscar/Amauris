@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="box-area">
+        <div class="left-box">
+          <div class="featured-image">
+            <img src="images/logo.png" alt="Imagen alusiva" />
+          </div>
+        </div>
+        <div class="right-box">
+          <form id="loginForm" onsubmit="return false;">
+            <div class="form-group mt-5 mb-2">
+              <label>Correo: </label>
+              <input class="form-control" type="text" name="correo" id="correo">
+            </div>
+            <div class="form-group mt-5 mb-2">
+              <label>Contraseña: </label>
+              <input class="form-control" type="password" name="contraseña" id="contraseña">
+            </div>
+            <div class="input-group">
+              <div class="form-check">
+                <br />
+                <label for=""><a href="#">¿Olvidaste la contraseña?</a></label>
+              </div>
+            </div>
+            <br>
+            <input class="btn btn-primary" type="submit" value="Iniciar sesión" onclick="validarContraseña()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/sesion.js" defer></script>
+</body>
+
+</html>
+
