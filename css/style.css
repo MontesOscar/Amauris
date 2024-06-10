@@ -1,10 +1,13 @@
-/* Estilos generales */
+
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: "Arial", sans-serif;
-  background: linear-gradient(#3498db,#ecf0f1,#3498db);
+  background: linear-gradient(#3498db, #ecf0f1, #3498db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -15,11 +18,13 @@ html {
 }
 
 .box-area {
-  width: 90%;
-  max-width: 1200px; /* Aumentado para acomodar ambas columnas */
-  background: white;
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: row; /* Cambiado a fila para alinear horizontalmente */

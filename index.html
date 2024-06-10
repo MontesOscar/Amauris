@@ -22,29 +22,40 @@
         <div class="right-box">
           <form id="loginForm" onsubmit="return false;">
             <div class="form-group mt-5 mb-2">
-              <label>Correo: </label>
-              <input class="form-control" type="text" name="correo" id="correo">
+              <label for="correo">Correo:</label>
+              <input class="form-control" type="text" name="correo" id="correo" />
             </div>
             <div class="form-group mt-5 mb-2">
-              <label>Contraseña: </label>
-              <input class="form-control" type="password" name="contraseña" id="contraseña">
+              <label for="contraseña">Contraseña:</label>
+              <input class="form-control" type="password" name="contraseña" id="contraseña" />
             </div>
             <div class="input-group">
               <div class="form-check">
                 <br />
-                <label for=""><a href="#">¿Olvidaste la contraseña?</a></label>
+                <label for=""><a href="olvide.html">¿Olvidaste la contraseña?</a></label>
               </div>
             </div>
-            <br>
-            <input class="btn btn-primary" type="submit" value="Iniciar sesión" onclick="validarContraseña()">
+            <br />
+            <input class="btn btn-primary" type="submit" value="Iniciar sesión" onclick="validarContraseña()" />
           </form>
         </div>
       </div>
     </div>
   </main>
+  <script>
+    function validarContraseña() {
+      var correo = document.getElementById('correo').value;
+      var contraseña = document.getElementById('contraseña').value;
+      if (contraseña === '123') {
+        alert('Inicio de sesión exitoso');
+        window.location.href = 'registrarX.html';
+      } else {
+        alert('Contraseña incorrecta');
+      }
+    }
+  </script>
   <script src="js/bootstrap.js"></script>
-  <script src="js/sesion.js" defer></script>
+
 </body>
 
 </html>
-

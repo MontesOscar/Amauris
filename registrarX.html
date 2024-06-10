@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <title>Page Title</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registrar Docente</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col"><!--form-->
-                    <form action="verX.html" method="get" onsubmit="return false;">
-                        <div class="form-group mt-5 mb-2">
-                            <label>Nombre: </label>
-                            <input class="form-control" type="text" name="nombre">
-                        </div>
-                        <div class="form-group mt-5 mb-2">
-                            <label>Materia: </label>
-                            <input class="form-control" type="text" name="materia">
-                        </div>
-                        <div class="form-group mt-5 mb-2">
-                            <label>Estatus: </label>
-                            <input type="checkbox" name="estatus">
-                        </div>
-                        <div class="form-group mt-5 mb-2">
-                            <label>Correo: </label>
-                            <input class="form-control" type="text" name="correo">
-                        </div>
-                        <div class="form-group mt-5 mb-2">
-                            <label>Curp: </label>
-                            <input class="form-control" type="text" name="curp">
-                        </div>
-                        <button class="btn btn-primary" onclick="registrarDocente()">Registrar Docente</button>
-                        <br><br>
-                    </form>
-                    
-                </div>
-                
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!--form-->
+            <form id="formRegistrar" onsubmit="return registrarDocente();">
+              <div class="form-group mt-5 mb-2">
+                <label>Nombre: </label>
+                <input class="form-control" type="text" name="nombre" required />
+              </div>
+              <div class="form-group mt-5 mb-2">
+                <label>Materia: </label>
+                <input class="form-control" type="text" name="materia" required />
+              </div>
+              <div class="form-group mt-5 mb-2">
+                <label>Estatus: </label>
+                <input type="checkbox" name="estatus" />
+              </div>
+              <div class="form-group mt-5 mb-2">
+                <label>Correo: </label>
+                <input class="form-control" type="email" name="correo" required />
+              </div>
+              <div class="form-group mt-5 mb-2">
+                <label>Curp: </label>
+                <input class="form-control" type="text" name="curp" required />
+              </div>
+              <button class="btn btn-primary" type="submit">
+                Registrar Docente
+              </button>
+              <br /><br />
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
-    <script src='js/bootstrap.js'></script>
-    <script src='js/ver.js'></script>
-</body>
+    <script>
+      function registrarDocente() {
+        const form = document.getElementById('formRegistrar');
+        const formData = new FormData(form);
+        const queryString = new URLSearchParams(formData).toString();
+        window.location.href = 'verX.html?' + queryString;
+        return false;
+      }
+    </script>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
