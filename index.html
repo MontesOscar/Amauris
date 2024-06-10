@@ -46,7 +46,7 @@
     function validarContraseña() {
       var correo = document.getElementById('correo').value;
       var contraseña = document.getElementById('contraseña').value;
-      if (contraseña === '123') {
+      if (contraseña === '123' && correo == "admin") {
         alert('Inicio de sesión exitoso');
         window.location.href = 'registrarX.html';
       } else {

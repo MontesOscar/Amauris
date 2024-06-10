@@ -18,6 +18,8 @@
                   <th>Estatus</th>
                   <th>Correo</th>
                   <th>CURP</th>
+                  <th>Modificar</th>
+                  <th>Eliminar</th>
                 </tr>
               </thead>
               <tbody id="contenido"></tbody>
@@ -31,7 +33,7 @@
         const params = new URLSearchParams(window.location.search);
         const nombre = params.get('nombre');
         const materia = params.get('materia');
-        const estatus = params.get('estatus') ? 'Activo' : 'Inactivo';
+        const estatus = params.get('estatus') === 'true' ? 'Activo' : 'Inactivo';
         const correo = params.get('correo');
         const curp = params.get('curp');
 
@@ -44,13 +46,24 @@
           <td>${estatus}</td>
           <td>${correo}</td>
           <td>${curp}</td>
+          <td><input class="btn btn-primary" type="button" value="Modificar" onclick="modificar()" /></td>
+          <td><input class="btn btn-danger" type="button" value="Eliminar" onclick="eliminar(this)" /></td>
         `;
 
         contenido.appendChild(fila);
       }
-
+      function modificar() {
+        window.location.href = 'registrarX.html';
+      }
+      function eliminar(button) {
+        const fila = button.parentElement.parentElement;
+        fila.remove();
+      }
       window.onload = obtenerDatos;
+      function registrar(){
+        window.location.href = 'registrarX.html';
+      }
     </script>
     <script src="js/bootstrap.js"></script>
-  </body>
-</html>
+    </body>
+    </html>
